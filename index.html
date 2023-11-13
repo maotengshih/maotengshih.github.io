@@ -159,7 +159,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/26/cli-command/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/10/26/Day002-of-coding/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -173,7 +173,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2023/09/26/cli-command/" class="post-title-link" itemprop="url">CLI 指令使用</a>
+            <a href="/2023/10/26/Day002-of-coding/" class="post-title-link" itemprop="url">CodingDay002：CSS 基礎操作與綜合演練</a>
         </h2>
 
         <div class="post-meta">
@@ -182,8 +182,9 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">發表於</span>
+              
 
-              <time title="創建時間：2023-09-26 18:41:20" itemprop="dateCreated datePublished" datetime="2023-09-26T18:41:20+08:00">2023-09-26</time>
+              <time title="創建時間：2023-10-26 17:56:03 / 修改時間：18:32:14" itemprop="dateCreated datePublished" datetime="2023-10-26T17:56:03+08:00">2023-10-26</time>
             </span>
 
           
@@ -197,9 +198,36 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="釋放端口"><a href="#釋放端口" class="headerlink" title="釋放端口"></a>釋放端口</h2><p>查詢：<code>-vanp tcp | grep &quot;*.&quot;</code></p>
-<p>細部查詢PID相關資訊：<code>ps aux | grep 65712</code></p>
-<p>強制釋放：<code>kill -9 8266</code></p>
+          <p>昨天我學到使用 <code>html</code> 標記網頁內容，今天學習的是使用 CSS 來將網頁內容進行排版。</p>
+<ol>
+<li><p>首先在 <code>&lt;head&gt;</code> 內增加 <code>&lt;link href=&quot;styles.css&quot; rel=&quot;stylesheet&quot;/&gt;</code> 使瀏覽器知道透過參照連結去找到所屬的樣式表。</p>
+</li>
+<li><p>在 <code>styles.css</code> 內透過選擇器選取目標物</p>
+<ul>
+<li>type selector : <code>elementtype &#123;&#125;</code></li>
+<li>id selector : <code>#idname &#123;&#125;</code></li>
+<li>class selector : <code>.classname &#123;&#125;</code></li>
+</ul>
+</li>
+<li><p>對目標物進行樣式變更</p>
+<ul>
+<li>背景圖片 : <code>background-image: url();</code></li>
+<li>文字對齊方式：<code>text-align: center;</code></li>
+<li>寬度設定：&#96;width: 80%;</li>
+<li>底色設定：<code>background-color: burlywood;</code></li>
+<li>留邊設定：&#96;margin-left: auto;</li>
+</ul>
+</li>
+<li><p>綜合演練： 在同一列顯示品名與價格</p>
+<ul>
+<li>將每一個品項以 <code>&lt;article&gt;</code>  群組化，並設定其 classname&#x3D;item</li>
+<li>將單一品項的產品名稱、價格以 <code>&lt;p class=product&gt;</code> <code>&lt;p class=price&gt;</code> 命名</li>
+<li>透過選擇器選取 <code>.item p &#123;display: inline-block;&#125;</code></li>
+<li>顯示為行內元素：<code>display: inline-block;</code></li>
+<li>寬度設定：<code>width: 50%;</code></li>
+</ul>
+</li>
+</ol>
 
       
     </div>
@@ -219,7 +247,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/23/fasting-goodbye/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/10/25/Day001-of-coding/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -233,7 +261,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2023/09/23/fasting-goodbye/" class="post-title-link" itemprop="url">斷食善終：預先安排人生的最後一哩路</a>
+            <a href="/2023/10/25/Day001-of-coding/" class="post-title-link" itemprop="url">CodingDay001：寫紙本筆記</a>
         </h2>
 
         <div class="post-meta">
@@ -244,7 +272,7 @@
               <span class="post-meta-item-text">發表於</span>
               
 
-              <time title="創建時間：2023-09-23 17:40:00 / 修改時間：18:11:07" itemprop="dateCreated datePublished" datetime="2023-09-23T17:40:00+08:00">2023-09-23</time>
+              <time title="創建時間：2023-10-25 18:23:05 / 修改時間：18:24:44" itemprop="dateCreated datePublished" datetime="2023-10-25T18:23:05+08:00">2023-10-25</time>
             </span>
 
           
@@ -258,13 +286,215 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>昨晚跟太太聊到當我們的人生走到最後一哩路時，會希望用什麼樣的方式與家人道別？</p>
-<p>在台灣安樂死尚未合法可行，親人在生命末期病痛纏身時，只能被動的接受插管、灌食安素、疼痛與治療的無限循環。畢醫師推廣的斷食善終是一個好方法，也多虧拍成紀錄片，讓我們更加了解實際的流程是如何運作，對於事先安排很有幫助。如果真的家中有人久病臥床時，也不致於因為家人意見的分歧造成關係破裂。</p>
-<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=bR4OJEScGZ4&t=23s">斷食善終紀錄片:《順行》A Good Death</a></p>
-<p>我決定提前寫在這裡：當我真的生病到無法自理時，請在世的家人朋友以兩到三週排程，逐步協助我減量攝取飲食直至斷食，以生前告別式的形式通知還在乎我的人，讓他們來跟我說說話，講講他們眼中的我是個怎麼樣的人。完成之後，讓我以自然衰老的方式向這個世界道別。</p>
-<p>也因此，我該好好記錄我在這個世界的每一天，認真的學習、認真的生活、真誠的對待周遭人。而這個部落格將成為我與這個世界互動的紀錄檔。一個隨時可供查閱的資料庫。</p>
-<p>我也因此體會到，寫作可以最為一種引導，陪伴自己好好活著，無論生活、學習，都持續記錄，讓自己不白白浪費這輩子來到這世界的入場券。充分體驗每一天的生活，用心的寫作進行記錄，協助頭腦清醒的思考，為自己的下一步行動做出更好的決策。</p>
+          <h2 id="HTML-為你的網頁增添內容"><a href="#HTML-為你的網頁增添內容" class="headerlink" title="HTML 為你的網頁增添內容"></a>HTML 為你的網頁增添內容</h2><p>之前就有學習過 HTML ，所以這個單元很快就通關，比較多都是複習語法與熟悉全英文的教學介面。總計大約二小時，除了複習標題、內容、段落的標記語法，也更熟悉元素(element)、屬性(attribute)、值(value)之間的關係與使用方式。</p>
+<p>HTML(HyperTextMarkupLanguage)超文本標記語言，簡單來說就是把你的網頁內容透過標記的方式，使得瀏覽器可以讀懂你這段是文字、圖片、影片，配上低配版的排版功能，得以呈現出一個內容為主，卻不怎麼美觀的網頁。</p>
+<h3 id="寫紙本筆記：少剪貼，多用腦"><a href="#寫紙本筆記：少剪貼，多用腦" class="headerlink" title="寫紙本筆記：少剪貼，多用腦"></a>寫紙本筆記：少剪貼，多用腦</h3><p>學習的過程之中最好準備一本紙本的筆記本(就算有用筆記軟體也建議再準備一本紙本筆記)，把常用到的重點指令、或容易混淆的觀念記錄下來。除了印象更加深刻、方便自己隨時查閱使用以外，最大的好處是強迫你不能無腦剪貼筆記，需用自己的方式整理內容。</p>
 
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/10/25/Day000-of-coding/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Maotengshih">
+      <meta itemprop="description" content="提供各種系統化的人生操作方法，使你的人生便捷、高效。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="施貿騰">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/10/25/Day000-of-coding/" class="post-title-link" itemprop="url">CodingDay000：練習是一切的終極答案</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+              
+
+              <time title="創建時間：2023-10-25 04:36:33 / 修改時間：17:35:42" itemprop="dateCreated datePublished" datetime="2023-10-25T04:36:33+08:00">2023-10-25</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>偶然發現到一個超棒的 coding 自學網站 <a target="_blank" rel="noopener" href="https://www.freecodecamp.org/">FreeCodeCamp</a>，是那種真希望我十年前就遇到它的那種棒。除了教材安排的難度很適合初學者，學習中的回饋機制也很棒，每一個小步驟通關都會有慶祝小語、數十個小步驟可以完成一個小專案、幾個小專案則可以獲得能在 LinkedIn 曬圖的證書。</p>
+<p>雖有多次中斷學習的失敗經驗，但最終我還是決定再一次重新學習編程，這次的學習沒有很強的目的性，也沒有想要轉職的意圖，作為興趣愛好的學習成分更高了一點，也想要透過學習編程讓自己在工作之餘有一個可以持續研究的主題，一個部落格寫作的素材。當然，也許就只是單純喜歡自己動手製作產品的成就感。</p>
+<p>有關編程，我總是以為那是很吃天賦的才能，或者至少要身處能持續編程的環境。剛好昨天看的一個 talk <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=EErY9zXGLNU"># What I Gained After 100 Days of Code</a>講到這件事。如果問成功的自學者有什麼秘訣？簡言之練習就是一切的終極答案，遠超過訣竅、天賦、秘徑等等等。</p>
+<p>也因此我打算每天排一小時專心練習編程。</p>
+<p>預計使用 <a target="_blank" rel="noopener" href="https://www.freecodecamp.org/">FreeCodeCamp</a> 這個網站的證書任務來循序漸進的練習編程。並且每天把學習心得彙整寫成部落格文章。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/10/23/practice/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Maotengshih">
+      <meta itemprop="description" content="提供各種系統化的人生操作方法，使你的人生便捷、高效。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="施貿騰">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/10/23/practice/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+              
+
+              <time title="創建時間：2023-10-23 19:04:02 / 修改時間：19:08:53" itemprop="dateCreated datePublished" datetime="2023-10-23T19:04:02+08:00">2023-10-23</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><a target="_blank" rel="noopener" href="https://i.imgur.com/mDxW5cQ.png">https://i.imgur.com/mDxW5cQ.png</a><br>Q: 請問你如何能編碼得這麼好？<br>A: Practice</p>
+<p>Q: 應該有什麼天賦才能碼得這麼好吧？<br>A: Practice</p>
+<p>Q: 我還是不懂，請問你如何能編碼得這麼好？<br>A: Practice</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/30/punch-writing/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Maotengshih">
+      <meta itemprop="description" content="提供各種系統化的人生操作方法，使你的人生便捷、高效。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="施貿騰">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/09/30/punch-writing/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2023-09-30 18:19:11" itemprop="dateCreated datePublished" datetime="2023-09-30T18:19:11+08:00">2023-09-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2023-10-06 17:29:28" itemprop="dateModified" datetime="2023-10-06T17:29:28+08:00">2023-10-06</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>這是一篇如何寫出有效文章的教學文。</p>
+<p>我寫每一篇文章都要花很多時間，但卻沒有感覺有明顯的進步。有別於過往是從一片白紙的狀態開始『自由書寫』，接下來我想嘗試『刻意練習』的方式強化我對寫作品質的掌握程度。而本次使用教材是洪震宇的『精準寫作』。</p>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3><p>起承轉合的寫作思維會妨礙讀者理解，在寫作者與讀者間設立了一道道的阻礙，使得讀者得像撥洋蔥一樣，一層一層的撥開起承轉合的路線導引，才能抵達寫作者想傳達的觀點與結論。</p>
+<p>寫作不必如此嬌羞。每一段的第一句就直球破題，勇敢的寫出自己的觀點。把你最重要的壓箱寶直接端上桌。</p>
+<p>必要的脈絡資訊再透過接續段落補述即可。</p>
+<h3 id="執行要點"><a href="#執行要點" class="headerlink" title="執行要點"></a>執行要點</h3><ul>
+<li>使用 Bullet point 的方式條列出要點</li>
+<li>使用 Hierarchy 的架構組織文章結構</li>
+<li>每個段落的 Punch 在第一句就進場</li>
+<li>使用 ROA 架構文章骨幹<ul>
+<li>設定 Reader property 提醒自己讀者是誰</li>
+<li>設定 Object property 自己目的為何</li>
+<li>設定 Action property 確認引導的行動</li>
+</ul>
+</li>
+<li>用自己的方式寫出 Memorizable 的結論</li>
+</ul>
+<h3 id="演練"><a href="#演練" class="headerlink" title="演練"></a>演練</h3>
       
     </div>
 
@@ -297,7 +527,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2023/09/21/post-from-obsidian/" class="post-title-link" itemprop="url">用寫作建立你的商業帝國</a>
+            <a href="/2023/09/21/post-from-obsidian/" class="post-title-link" itemprop="url">我使用 Obsidian 寫部落格</a>
         </h2>
 
         <div class="post-meta">
@@ -314,7 +544,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2023-09-24 18:18:56" itemprop="dateModified" datetime="2023-09-24T18:18:56+08:00">2023-09-24</time>
+                <time title="修改時間：2023-09-27 09:29:56" itemprop="dateModified" datetime="2023-09-27T09:29:56+08:00">2023-09-27</time>
               </span>
 
           
@@ -328,23 +558,27 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="願景"><a href="#願景" class="headerlink" title="願景"></a>願景</h1><p>隨著你的寫作內容逐漸增加，每一篇文字員工為你帶進各式各樣流量、業務、合作機會，你透過 Hexo 一鍵完成辦公室的擴建，佈署至位於 GitHub Pages 的總部所在地，任何人在任何地方在任何時間都可以透過你的網址造訪你的辦公室。而這一切的運作只需要一台可以連網的電腦。這也是我正在追求的辦公模式。</p>
-<h2 id=""><a href="#" class="headerlink" title=""></a></h2><p>過去使用 WordPress 架站的我投向了 Hexo 的懷抱。在今年改用靜態頁面產生器創建自己的部落格，串接一直在使用的筆記軟體 obsidian 進行寫作，整個流程建置與工具選擇花了不少的心力，總算調配出一個比較適合我的工作流程。將其結論整理在此，做個記錄，方便自己檢索，也供他人參考。</p>
-<h2 id="選擇文字編輯器"><a href="#選擇文字編輯器" class="headerlink" title="選擇文字編輯器"></a>選擇文字編輯器</h2><p>首先選擇你喜歡的文字編輯器，我的選擇要點有三。</p>
+          <h2 id="使用-Obsidian-寫作的工作模式"><a href="#使用-Obsidian-寫作的工作模式" class="headerlink" title="使用 Obsidian 寫作的工作模式"></a>使用 Obsidian 寫作的工作模式</h2><p>隨著在 Obsidian 的筆記內容逐漸增加，逐漸的將概念較為完整的筆記改寫成部落格文章，讓每一篇文章為自己帶進各式各樣流量、業務、合作機會。透過 Hexo 一鍵完成網站的擴建，佈署至位於 GitHub Pages 的所在地，任何人在任何地方在任何時間都可以透過一個網址造訪你的網站。而這一切的運作只需要一台可以連網的電腦。這也是我正在運作的工作模式。</p>
+<h2 id="減輕非核心工作的負擔"><a href="#減輕非核心工作的負擔" class="headerlink" title="減輕非核心工作的負擔"></a>減輕非核心工作的負擔</h2><p>過去使用 WordPress 架站的我在今年投向了 Hexo 的懷抱。主要原因是我更想專注在文字創作，而不是花費過多的時間調整版型、探索功能、軟體更新等許多非核心工作的工作。</p>
+<p>在了解到使用靜態頁面的好處(快速、安全、便宜、自主權)後，花了一些時間學習使用靜態頁面產生器創建自己的部落格，串接一直在使用的筆記軟體 Obsidian 進行寫作，整個流程建置與工具選擇花了不少的心力，總算調配出一個比較適合我的工作流程。將其結論整理在此，做個記錄，方便自己檢索，也供他人參考。</p>
+<h2 id="為什麼選擇-Obsidian"><a href="#為什麼選擇-Obsidian" class="headerlink" title="為什麼選擇 Obsidian"></a>為什麼選擇 Obsidian</h2><p>首先選擇你喜歡的文字編輯器，我選擇 Obsidian 要點有三。</p>
 <ol>
-<li>檔案自主權</li>
 <li>介面的沉浸感</li>
+<li>檔案自主權</li>
 <li>使用成本</li>
 </ol>
-<p>我使用過至少十種以上的文字編輯器，目前最喜歡的是黑曜石 obsidian，除了名字好聽、介面簡潔，在寫作時讓我有滿滿的沉浸感以外，也可以安裝有趣的外掛裝潢一下的文字編輯器，打造專屬於你自己的個人化設定。但最主要的原因是可以將檔案以 markdown 的格式保存在自己的電腦，不用被綁架一定什麼都要上雲端，不用擔心用習慣以後就只能乖乖付費。</p>
-<h2 id="將文章編譯成網頁原始碼"><a href="#將文章編譯成網頁原始碼" class="headerlink" title="將文章編譯成網頁原始碼"></a>將文章編譯成網頁原始碼</h2><p>我們寫好的文章如果未經處理，就無法依照各個不同的閱讀載具調整成最適合的閱讀格式。所以我們要先透過靜態網站產生器 (Static Site Generator) 將文章預先處理成瀏覽器所能讀取的檔案格式 html (Hypertext Markup Language) 。</p>
+<p>首先，我使用過至少十種以上的文字編輯器，目前最喜歡的還是黑曜石 Obsidian ，除了名字好聽、介面簡潔，還可以安裝有趣實用的外掛，訂製專屬的個人化設定，更重要的是在寫作時讓我有滿滿的沉浸感，不容易分心去做其他事。</p>
+<p>第二，寫作文檔以 markdown 的格式保存在自己的電腦，可以自己選擇備份的方式，也保留日後若有想要搬移部落格的彈性，所有的檔案都是以兼容性的最高的形式存在。</p>
+<p>第三，不用被 SasS 服務各種綁架，我不喜歡檔案強制上傳被收取使用費的感覺。也不喜歡按月收費而不是按實際使用量收費。在還沒這麼確定自己可以大量、持續寫作前，Obsidian 是免費陪著我一起前進的文字編輯器。</p>
+<h2 id="將文章編譯成網頁"><a href="#將文章編譯成網頁" class="headerlink" title="將文章編譯成網頁"></a>將文章編譯成網頁</h2><p>我們寫好的文章如果未經處理，就無法依照各個不同的閱讀載具，調整成最適合的閱讀格式，送到讀者眼中。所以我們要先透過靜態網站產生器 (Static Site Generator) 將文章預先處理成瀏覽器所能讀取的檔案格式 html (Hypertext Markup Language) 。</p>
 <p>這邊我選擇的是 Hexo 靜態網站產生器。</p>
 <p>這個動作最主要的目的是將自己的文章編譯成靜態網頁，Hexo 速度很快，教學資源也多，而我當初挑選它最主要的原因是我的老 Mac 對 node.js 的相容較好，不像一些比較晚出現的 SSG 在編譯時一直會跳出 macOS 版本過舊的提示訊息。我就只是想要寫文章，不要強制我要一直更新那些我根本用不到的功能。</p>
 <p>編譯的執行需要透過終端機下指令，可以透過內建的 terminal.app ，我則是選擇安裝 vscode 編輯器，除了可以進行 CLI (Command Line Interface) 指令的執行，更可以在此編修自己網站的程式碼，為自己的部落格做一點”硬體”上的裝修與改變。</p>
-<h2 id="佈署至-GitHub-Pages"><a href="#佈署至-GitHub-Pages" class="headerlink" title="佈署至 GitHub Pages"></a>佈署至 GitHub Pages</h2><p>我們所寫的每一篇文章就像是公司招募進來的員工，每個員工都有其擅長的項目，為你的公司帶來關注與業務。而編譯好的網站就是所有員工上班的辦公室。辦公室還需要一塊土地與門牌號碼。</p>
+<h2 id="將網頁佈署至-GitHub-Pages"><a href="#將網頁佈署至-GitHub-Pages" class="headerlink" title="將網頁佈署至 GitHub Pages"></a>將網頁佈署至 GitHub Pages</h2><p>我們所寫的每一篇文章就像是公司招募進來的員工，每個員工都有其擅長的項目，為你的公司帶來關注與業務。而編譯好的網站就是所有員工上班的辦公室。辦公室還需要一塊土地與門牌號碼。</p>
 <p>GitHub Pages 是 GitHub 所提供的網頁托管服務，在自己的流量還沒有大到需要獨立門戶，是很棒的免費服務，對於非商業用途的個人網誌而言，非常非常夠用了。更提供一組以你註冊 GitHub 帳號的專屬網址。例如：yourname.github.io。就幫你一併完成了辦公室門牌號碼的的申請，方便他人透過這個網址造訪你的辦公室。</p>
-<p>辦公室所身處的土地就是伺服器托管，也就是你編譯好的程式碼要放在哪一台電腦裡，因為家用電腦可能會關機、連線不穩等等的因素，所以會把網站放在專門把電腦租給他人托管網站的伺服器廠商，常見的有 Netify、Vercel 等等，這邊我選擇的是使用 GitHub Pages，除了免費托管以外，可以一併解決土地與門牌號碼的問題。讓我在還不知道自己能持續寫多久之前，先專心的把經歷集中在寫作本身，而不用花太多心神維護各種工具。</p>
-<h2 id="操作流程"><a href="#操作流程" class="headerlink" title="操作流程"></a>操作流程</h2><ul>
+<p>辦公室所身處的土地就是伺服器托管，也就是你編譯好的程式碼要放在哪一台電腦裡，因為家用電腦可能會關機、連線不穩等等的因素，所以會把網站放在專門把電腦租給他人托管網站的伺服器廠商，常見的有 Netify、Vercel 等等，這邊我選擇的是使用 GitHub Pages，除了免費托管以外，可以一併解決土地與門牌號碼的問題。讓我在還不知道自己能持續寫多久之前，先專心的把精力集中在寫作本身，而不用花太多心神維護各種工具。</p>
+<h2 id="操作流程"><a href="#操作流程" class="headerlink" title="操作流程"></a>操作流程</h2><p>綜合以上，濃縮成以下步驟</p>
+<ul>
 <li>在 Obsidian 內完成寫作</li>
 <li>透過 Markdown Blogger Plugin 的 push 功能將文章推送本地的部落格文章資料夾內</li>
 <li>在終端機內運行 <code>hexo serve</code></li>
@@ -353,6 +587,7 @@
 <li>清除快取並執行檔案編譯： <code>hexo clean &amp;&amp; hexo g</code></li>
 <li>佈署至 GitHub Pages ： <code>hexo deploy</code></li>
 </ul>
+<h2 id="結論"><a href="#結論" class="headerlink" title="結論"></a>結論</h2><p>雖然我不是電腦工程師，但整個寫作過程搭配使用的工具套組讓我感覺自己就是個電腦工程師，也很開心自己多掌握了一套技能樹。</p>
 
       
     </div>
@@ -372,7 +607,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/21/Hepta-build-history/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/08/31/hexo-command/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -386,459 +621,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2023/09/21/Hepta-build-history/" class="post-title-link" itemprop="url">Heptabase 的打造歷程</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">發表於</span>
-
-              <time title="創建時間：2023-09-21 17:32:27" itemprop="dateCreated datePublished" datetime="2023-09-21T17:32:27+08:00">2023-09-21</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>商業思維學院 heptabase 的打造歷程<br>動機：為什麼選做這個題目，而不是其他題目？</p>
-<p>找人：要找價值觀接近的，而不一定是找能力最好的。就跟找結婚對象很類似。</p>
-<p>創辦人的不可妥協：不只是單純的偏執，而是明確知道公司要走到哪，依此去權衡每個做決定的當下。</p>
-<p>公司文化：你做事的方法，會衍生成全公司所默認的做事方法。</p>
-<p>教育：全世界最好的教育資源幾乎都在網路上，以非常便宜甚至免費的價格，就等著你自己去取用。</p>
-<p>與用戶對話：在個大社團私訊潛在可能的用戶，陪他們做線上onboarding，觀察他們的反應，做用戶訪談，記錄他們的反應，作為開發依據。</p>
-<p>打造產品：小步快速的迭代，設定一個快速迭代的頻率，例如每七天做一次更新，如果要開發的功能太大，就精簡成最最重要的功能先開發。時間到就是要上線。</p>
-<p>核心功能：前半年的閉門造車，源自於缺少對核心用戶的了解，一直花時間在開發編輯器。後來才決定把原本的設計封存。重新開始，從最重要的白板功能開始。</p>
-<p>收費：收費是一個判斷標準，除了用來篩選出正確的目標用戶，更重要的事讓團隊的動能集中在真正重要的事情上，而不被其他雜訊干擾。</p>
-<p>創業動機：<br>奇點將近 by ：資訊儲存與利用的六階段。人類一生所能做最大的貢獻就是將資訊的保存與再利用，開發更有效率的形式進行應用。<br>人類三部曲 by：人類之所以強大是因為協作能力。文字、與共同的抽象概念(國家、信仰、公司)<br>計算機發展歷史：比爾蓋茲與賈柏斯都是抄襲1970年代alan kay 的視窗圖形用戶界面。</p>
-<p>把夢想拆解成可行的專案，從加速人類致力發展，收斂成 contexualize our brian</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/08/theme-next/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Maotengshih">
-      <meta itemprop="description" content="提供各種系統化的人生操作方法，使你的人生便捷、高效。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="施貿騰">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/09/08/theme-next/" class="post-title-link" itemprop="url">theme-next</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">發表於</span>
-              
-
-              <time title="創建時間：2023-09-08 17:38:17 / 修改時間：17:47:39" itemprop="dateCreated datePublished" datetime="2023-09-08T17:38:17+08:00">2023-09-08</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="改變主題風格"><a href="#改變主題風格" class="headerlink" title="改變主題風格"></a>改變主題風格</h3><p>theme&#x2F;_config.yml</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Schemes</span><br><span class="line">scheme: Muse</span><br><span class="line">#scheme: Mist</span><br><span class="line">#scheme: Pisces</span><br><span class="line">#scheme: Gemini</span><br></pre></td></tr></table></figure>
-
-<h3 id="主題選單"><a href="#主題選單" class="headerlink" title="主題選單"></a>主題選單</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  about: /about/ || fa fa-user</span><br><span class="line">  #tags: /tags/ || fa fa-tags</span><br><span class="line">  #categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  #schedule: /schedule/ || fa fa-calendar</span><br><span class="line">  #sitemap: /sitemap.xml || fa fa-sitemap</span><br><span class="line">  #commonweal: /404/ || fa fa-heartbeat</span><br></pre></td></tr></table></figure>
-<h4 id="更換主題選單-icon"><a href="#更換主題選單-icon" class="headerlink" title="更換主題選單 icon"></a>更換主題選單 icon</h4><p>到 <a target="_blank" rel="noopener" href="https://fontawesome.com/icons/download?f=classic&s=solid">fontawesome</a> 選擇喜歡的 icon 樣式，替換主題選單 || 後的 icon 敘述 (HEXO 主題本身就有支援fa)</p>
-<h3 id=""><a href="#" class="headerlink" title=""></a></h3>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/08/shortcutkey-guide/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Maotengshih">
-      <meta itemprop="description" content="提供各種系統化的人生操作方法，使你的人生便捷、高效。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="施貿騰">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/09/08/shortcutkey-guide/" class="post-title-link" itemprop="url">shortcutkey-guide</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">發表於</span>
-              
-
-              <time title="創建時間：2023-09-08 09:50:28 / 修改時間：09:53:47" itemprop="dateCreated datePublished" datetime="2023-09-08T09:50:28+08:00">2023-09-08</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="Markdown-文件撰寫"><a href="#Markdown-文件撰寫" class="headerlink" title="Markdown 文件撰寫"></a>Markdown 文件撰寫</h2><ul>
-<li>文件內建立超連結：選取文字後 <code>ctrl v</code></li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/08/markdown-guide/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Maotengshih">
-      <meta itemprop="description" content="提供各種系統化的人生操作方法，使你的人生便捷、高效。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="施貿騰">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/09/08/markdown-guide/" class="post-title-link" itemprop="url">markdown-guide</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">發表於</span>
-              
-
-              <time title="創建時間：2023-09-08 09:40:01 / 修改時間：09:48:49" itemprop="dateCreated datePublished" datetime="2023-09-08T09:40:01+08:00">2023-09-08</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="使用-github-作為圖床使用"><a href="#使用-github-作為圖床使用" class="headerlink" title="使用 github 作為圖床使用"></a>使用 github 作為圖床使用</h3><p><a target="_blank" rel="noopener" href="https://github.com/maotengshih/maotengshih.github.io/issues">任意進入一個 repo 內的 issue</a> 後將截圖貼上，即可獲得圖片的連結網址</p>
-<h3 id="貼上超連結"><a href="#貼上超連結" class="headerlink" title="貼上超連結"></a>貼上超連結</h3><p>在 vscode 內選取一段文字後直接將預先複製好的網址按 ctrl v 即可將這斷文字編成超連結。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/07/tag-use/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Maotengshih">
-      <meta itemprop="description" content="提供各種系統化的人生操作方法，使你的人生便捷、高效。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="施貿騰">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/09/07/tag-use/" class="post-title-link" itemprop="url">tag-use</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">發表於</span>
-
-              <time title="創建時間：2023-09-07 18:31:29" itemprop="dateCreated datePublished" datetime="2023-09-07T18:31:29+08:00">2023-09-07</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2023-09-08 09:56:12" itemprop="dateModified" datetime="2023-09-08T09:56:12+08:00">2023-09-08</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="如何使用標籤管理上萬則卡片筆記？"><a href="#如何使用標籤管理上萬則卡片筆記？" class="headerlink" title="如何使用標籤管理上萬則卡片筆記？"></a>如何使用標籤管理上萬則卡片筆記？</h1><blockquote>
-<p>整理的大前提「不是分類」，而是「可以搜尋關鍵字找到」。</p>
-</blockquote>
-<h2 id="什麼時候不需要使用『標籤』？"><a href="#什麼時候不需要使用『標籤』？" class="headerlink" title="什麼時候不需要使用『標籤』？"></a>什麼時候不需要使用『標籤』？</h2><p>如果有明確的關鍵字可以搜尋的到，就沒有必要另外下『標籤』，每一個分類動作都是多餘的浪費時間。只是花時間做出好看的整理而已。</p>
-<h2 id="用標籤安排進度、使用需求："><a href="#用標籤安排進度、使用需求：" class="headerlink" title="用標籤安排進度、使用需求："></a>用標籤安排進度、使用需求：</h2><p>要用標籤去管理那些無法被搜尋到的需求，例如：進度安排、使用情境安排。這樣的需求才不容易被搜尋的到，也才會常被拿出來使用。</p>
-<h3 id="進度安排："><a href="#進度安排：" class="headerlink" title="進度安排："></a>進度安排：</h3><p>『初步想法的寫作』：可能只有一個想法，還不確定是否要寫？要如何寫？</p>
-<p>『進行中的寫作』：我寫到一半的文章，可能資料蒐集的還不夠齊全，有些想法還序要驗證。</p>
-<p>『最後一哩路的寫作』：該有的論述、資料都有了，只差一段完整的時間統整好即可發佈。</p>
-<h3 id="情境安排："><a href="#情境安排：" class="headerlink" title="情境安排："></a>情境安排：</h3><p>『五分鐘的空檔』：一些可以隨手處理好的資料、待閱讀的短文</p>
-<p>『二十分鐘的空檔』：記錄一些想法、規劃一些待辦事項</p>
-<p>『一小時的空檔』：可以讀一些資料、產出一些文字。</p>
-<h3 id="Esor-的常用標籤："><a href="#Esor-的常用標籤：" class="headerlink" title="Esor 的常用標籤："></a>Esor 的常用標籤：</h3><p><strong>在「工作、生活中的目標專案筆記」上面</strong></p>
-<ul>
-<li><p>每日推進</p>
-</li>
-<li><p>企劃醞釀</p>
-</li>
-<li><p>定期追蹤</p>
-</li>
-</ul>
-<p><strong>一直持續進行的「電腦玩物寫作目標」</strong></p>
-<ul>
-<li><p>撰寫完成</p>
-<ul>
-<li><p>進度超過 50% ，並且想法已經抵定，就是要花時間最後寫完的文章。</p>
-</li>
-<li><p>當我有一些比較正式的專注時間時，我會打開「撰寫完成」標籤，推進這些即將寫完的文章進度。</p>
-</li>
-</ul>
-</li>
-<li><p>測試研究</p>
-<ul>
-<li><p>需要用一些數位裝置測試的工具，需要實踐一下的方法。</p>
-</li>
-<li><p>當我有一些零碎時間，但腦筋轉不動時，我會打開「測試研究」標籤，推進這些需要先測試看看（動動手就好，不一定要動腦）的文章進度。</p>
-</li>
-<li><p>測試到一定階段，這些文章就可以轉換成「撰寫完成」標籤。</p>
-</li>
-</ul>
-</li>
-<li><p>思考動腦</p>
-<ul>
-<li><p>需要想清楚方法論，需要解析問題的文章題目。</p>
-</li>
-<li><p>當我有一些零碎時間，而且腦筋可以轉動，我會打開「思考動腦」標籤，推進這些需要動動腦的題目。</p>
-</li>
-<li><p>解出一定程度答案，這些文章就可以轉成「撰寫完成」標籤</p>
-</li>
-</ul>
-</li>
-</ul>
-<p><strong>『針對生活中的任務』，想要執行的興趣、想要學習的技能的筆記：</strong></p>
-<ul>
-<li><p>兩人時間</p>
-<ul>
-<li>有些事情是可以跟另一半一起完成的，這樣的筆記我就加上這個標籤，當出現適合的空檔時，打開這個標籤，就可以選擇想要推進的任務。</li>
-</ul>
-</li>
-<li><p>一人空閒</p>
-<ul>
-<li>有些興趣只有我自己有興趣，例如我自己想讀的書，我就加上這個標籤，當出現我一個人的空檔時（例如上完課回程的高鐵上），我就打開這個標籤，選擇一件事情來推進。</li>
-</ul>
-</li>
-<li><p>想和孩子一起做</p>
-<ul>
-<li>有些娛樂、學習是可以和孩子一起做的，我就把這樣的筆記加上這個標籤，現在你應該知道我什麼時候會打開了吧？</li>
-</ul>
-</li>
-</ul>
-<h1 id="結論"><a href="#結論" class="headerlink" title="結論"></a>結論</h1><p><strong>真正好用的「標籤（Tag）」，可以告訴我在目前的空檔時間中，我可以採取什麼更好的行動。</strong></p>
-<p><strong>真正好用的「標籤（Tag）」，應該是一種真正有效的標注，並且跟著任務筆記的執行狀態而改變，從而幫助我追蹤需要的執行狀態。</strong></p>
-<p><a target="_blank" rel="noopener" href="https://www.playpcesor.com/2021/12/2021evernote-notion-obsidian.html">2021覆盤&#65306;如何用標籤管理上萬則筆記&#65311;Evernote, Notion, obsidian 都適用</a></p>
-<div>
-https://www.playpcesor.com/2021/12/2021evernote-notion-obsidian.html
-</div>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/04/year-09-01-show-me-again/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Maotengshih">
-      <meta itemprop="description" content="提供各種系統化的人生操作方法，使你的人生便捷、高效。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="施貿騰">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/09/04/year-09-01-show-me-again/" class="post-title-link" itemprop="url">精準寫作</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">發表於</span>
-              
-
-              <time title="創建時間：2023-09-04 17:05:46 / 修改時間：17:35:38" itemprop="dateCreated datePublished" datetime="2023-09-04T17:05:46+08:00">2023-09-04</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="螢幕布局"><a href="#螢幕布局" class="headerlink" title="螢幕布局"></a>螢幕布局</h2><p>左上角為瀏覽器畫面：localhost、Github Pages</p>
-<p>正下上為 VS Code Editor：中間偏左為文字編輯工具、偏右為 markdown Preview</p>
-<p>右上角為筆記軟體：heptabase、obsidian、備忘錄</p>
-<h2 id="輸入來源"><a href="#輸入來源" class="headerlink" title="輸入來源"></a>輸入來源</h2><p>隨手筆記：heptabase Capture、備忘錄、Obsidian</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/08/31/hexo-shortcut/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Maotengshih">
-      <meta itemprop="description" content="提供各種系統化的人生操作方法，使你的人生便捷、高效。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="施貿騰">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/08/31/hexo-shortcut/" class="post-title-link" itemprop="url">Hexo 部落格用法指南</a>
+            <a href="/2023/08/31/hexo-command/" class="post-title-link" itemprop="url">Hexo 指令用法</a>
         </h2>
 
         <div class="post-meta">
@@ -855,25 +638,8 @@ https://www.playpcesor.com/2021/12/2021evernote-notion-obsidian.html
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2023-09-26 18:55:11" itemprop="dateModified" datetime="2023-09-26T18:55:11+08:00">2023-09-26</time>
+                <time title="修改時間：2023-09-27 08:28:58" itemprop="dateModified" datetime="2023-09-27T08:28:58+08:00">2023-09-27</time>
               </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分類於</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%A4%A7%E5%88%86%E9%A1%9E/" itemprop="url" rel="index"><span itemprop="name">大分類</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%A4%A7%E5%88%86%E9%A1%9E/%E5%B0%8F%E5%88%86%E9%A1%9E/" itemprop="url" rel="index"><span itemprop="name">小分類</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%B0%8F%E5%88%86%E9%A1%9E/" itemprop="url" rel="index"><span itemprop="name">小分類</span></a>
-                </span>
-            </span>
 
           
 
@@ -886,7 +652,7 @@ https://www.playpcesor.com/2021/12/2021evernote-notion-obsidian.html
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Hexo-部落格"><a href="#Hexo-部落格" class="headerlink" title="Hexo 部落格"></a>Hexo 部落格</h1><h3 id="清快取-接著執行-編譯加佈署"><a href="#清快取-接著執行-編譯加佈署" class="headerlink" title="清快取 接著執行 編譯加佈署"></a>清快取 接著執行 編譯加佈署</h3><blockquote>
+          <h3 id="清快取-接著執行-編譯加佈署"><a href="#清快取-接著執行-編譯加佈署" class="headerlink" title="清快取 接著執行 編譯加佈署"></a>清快取 接著執行 編譯加佈署</h3><blockquote>
 <p>hexo clean &amp;&amp; hexo g –d</p>
 </blockquote>
 <h2 id="快速啟動"><a href="#快速啟動" class="headerlink" title="快速啟動"></a>快速啟動</h2><h3 id="建立新文章"><a href="#建立新文章" class="headerlink" title="建立新文章"></a>建立新文章</h3><blockquote>
@@ -923,9 +689,9 @@ https://www.playpcesor.com/2021/12/2021evernote-notion-obsidian.html
 <h3 id="從預先搭好的鷹架建立你的文章-在-scaffolds-資料夾中有預先建立好的模版"><a href="#從預先搭好的鷹架建立你的文章-在-scaffolds-資料夾中有預先建立好的模版" class="headerlink" title="從預先搭好的鷹架建立你的文章 ( 在 scaffolds 資料夾中有預先建立好的模版 )"></a>從預先搭好的鷹架建立你的文章 ( 在 scaffolds 資料夾中有預先建立好的模版 )</h3><blockquote>
 <p>hexo [layout] post-name</p>
 </blockquote>
-<h3 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a>Front-matter</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hello World</span><br><span class="line">date: 2013/7/13 20:46:25</span><br><span class="line">tags: [hexo, blog, cmd]</span><br><span class="line">categories: </span><br><span class="line">- [不同的分類]</span><br><span class="line">- [要分別用中括號包起來]</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h3 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a>Front-matter</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">title: Hello World</span><br><span class="line"></span><br><span class="line">date: 2013/7/13 20:46:25</span><br><span class="line"></span><br><span class="line">tags: [hexo, blog, cmd]</span><br><span class="line"></span><br><span class="line">categories:</span><br><span class="line"></span><br><span class="line">- [不同的分類]</span><br><span class="line"></span><br><span class="line">- [要分別用中括號包起來]</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<h3 id="特殊引用"><a href="#特殊引用" class="headerlink" title="特殊引用"></a>特殊引用</h3><blockquote><p>Writing is good, writing is cool, </p>
+<h3 id="特殊引用"><a href="#特殊引用" class="headerlink" title="特殊引用"></a>特殊引用</h3><blockquote><p>Writing is good, writing is cool,</p>
 <footer><strong>Author url link-title</strong></footer></blockquote>
 
 <h3 id="Youtube-引用"><a href="#Youtube-引用" class="headerlink" title="Youtube 引用"></a>Youtube 引用</h3><div class="video-container"><iframe src="https://www.youtube.com/embed/MNb2hl1TSak" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
@@ -933,9 +699,12 @@ https://www.playpcesor.com/2021/12/2021evernote-notion-obsidian.html
 <h3 id="Youtube-播放清單引用"><a href="#Youtube-播放清單引用" class="headerlink" title="Youtube 播放清單引用"></a>Youtube 播放清單引用</h3><div class="video-container"><iframe src="https://www.youtube.com/embed/videoseries?list=PL9hW1uS6HUfscJ9DHkOSoOX45MjXduUxo" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
 
 <h2 id="一鍵發佈，兩種寫法"><a href="#一鍵發佈，兩種寫法" class="headerlink" title="一鍵發佈，兩種寫法"></a>一鍵發佈，兩種寫法</h2><blockquote>
-<p>$ hexo generate –deploy<br>$ hexo deploy –generate</p>
+<p>$ hexo generate –deploy</p>
 </blockquote>
-<h2 id="串接寫法-與簡寫"><a href="#串接寫法-與簡寫" class="headerlink" title="串接寫法&amp;&amp;  與簡寫"></a>串接寫法&amp;&amp;  與簡寫</h2><blockquote>
+<blockquote>
+<p>$ hexo deploy –generate</p>
+</blockquote>
+<h2 id="串接寫法-與簡寫"><a href="#串接寫法-與簡寫" class="headerlink" title="串接寫法&amp;&amp; 與簡寫"></a>串接寫法&amp;&amp; 與簡寫</h2><blockquote>
 <p>hexo clean &amp;&amp; hexo g –d</p>
 </blockquote>
 
@@ -955,9 +724,6 @@ https://www.playpcesor.com/2021/12/2021evernote-notion-obsidian.html
 
 
   
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一頁"></i></a>
-  </nav>
 
 
 
@@ -1022,16 +788,12 @@ https://www.playpcesor.com/2021/12/2021evernote-notion-obsidian.html
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
-      <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">3</span>
-        <span class="site-state-item-name">分類</span>
-      </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">標籤</span>
       </div>
   </nav>
